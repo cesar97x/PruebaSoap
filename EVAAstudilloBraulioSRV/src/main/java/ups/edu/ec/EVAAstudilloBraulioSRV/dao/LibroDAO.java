@@ -25,7 +25,7 @@ public class LibroDAO {
 		em.merge(per);
 	}
 	
-	public Libro read(String id) {
+	public Libro read(int id) {
 		Libro per = em.find(Libro.class, id);
 		return per;
 	}
