@@ -130,4 +130,11 @@ public class Libro {
         this.titulo = value;
     }
 
+	@Override
+	public String toString() {
+		return "Libro [codigo=" + codigo + ", editorial=" + editorial + ", idioma=" + idioma + ", titulo=" + titulo
+				+ "]";
+	}
+
+    
 }

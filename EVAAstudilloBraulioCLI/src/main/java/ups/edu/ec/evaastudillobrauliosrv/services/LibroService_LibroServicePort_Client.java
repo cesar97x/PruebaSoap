@@ -51,8 +51,13 @@ public final class LibroService_LibroServicePort_Client {
         
         {
         System.out.println("Invoking crearLibro...");
-        ups.edu.ec.evaastudillobrauliosrv.services.Libro _crearLibro_arg0 = null;
-        java.lang.String _crearLibro__return = port.crearLibro(_crearLibro_arg0);
+        ups.edu.ec.evaastudillobrauliosrv.services.Libro libro = null;
+        libro=new Libro();
+        libro.setCodigo(4);
+        libro.setTitulo("el multiverso");
+        libro.setEditorial("espacioTex");
+        libro.setIdioma("Ingles");
+        java.lang.String _crearLibro__return = port.crearLibro(libro);
         System.out.println("crearLibro.result=" + _crearLibro__return);
 
 
